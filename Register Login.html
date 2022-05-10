@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IndiSpice</title>
+<link rel="stylesheet" href="style.css"> <!--The style sheets contains the content adn structure of the webpage.-->
+</head>
+
+<header>INDI-SPICE</header>
+
+<body>
+    
+
+<nav>   <!--This tag provides navagation links-->
+<ul>
+<li><a href="The Website.html">Home</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Menu.html">Menu</a></li>
+<li><a href="Register Login.html">Register/Login</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="Reservations.html">Reservations</a></li>
+</nav>
+</ul>
+
+<div>
+    <img class="ind-flag" src="Resturant images/Indian flag.jpeg" alt="Indian flag">
+    </div>
+    
+    <div>
+        <img class="indis-flag" src="Resturant images/Indian flag.jpeg" alt="Indian flag">
+    </div>
+
+    
+    <h1>This is the registration form to register online to INDI-SPICE.</h1>
+
+<form action="insert.php" method="POST">              <!--Action is where to send data, method is how securely it gets there.-->
+        <table class="form1">
+            <tr>
+            <td>
+                Name:
+            </td>
+<td>
+    <input type="text" placeholder="Name" name="name" required>
+
+</td>
+<tr>    <!--Tr tags define a row in a table-->
+    <tr>
+
+<td>            <!--Td is for the cells in the table.-->
+
+</td>
+<tr>
+</tr>
+<td>
+    Password : 
+</td>
+<td>
+    <input type="Password" placeholder="Password" name="Password" required>
+</td>
+</tr>
+<tr>
+<td>
+    Gender :  
+</td>
+<td>
+    <input type="radio" name="Gender" value="m">Male
+    <input type="radio" name="Gender" value="f">Female
+</td>
+</tr>
+<tr>
+    <td>
+        Email : 
+    </td>
+    <td>
+        <input type="mail" placeholder="Email" name="email" required>
+    </td>
+</tr>
+<tr>
+    <td>
+        Phone Number :
+    </td>
+    <td>
+        <input type="Phone" placeholder="07****" name="phonenumber" required>
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="Submit" value="Submit" required>
+    </td>
+</tr>
+        </table>
+    </form>
+
+
+
+
+    
+    <form action="insert.php" method="POST">          
+        <table class="form3">
+            <tr>
+            <td>
+                Username
+            </td>
+<td>
+    <input type="text" placeholder="Username" name="Username" required>
+
+</td>
+<tr>
+    <tr>
+
+<td>
+
+</td>
+<tr>
+</tr>
+<td>
+    Password : 
+</td>
+<td>
+    <input type="Password" placeholder="Password" name="Password" required>
+</td>
+</tr>
+<tr>
+    <td>
+        <input type="submit" value="Login" required>
+    </td>
+</tr>
+        </table>
+    </form>
+
+
+
+        <div>
+            <img class="Show" src="Resturant images/Wrap.jpeg" alt="Wrap">
+            <img class="Show" src="Resturant images/india map.jpg" alt="map">
+            <img class="Show" src="Resturant images/rice.jpeg" alt="rice">
+            <img class="Show" src="Resturant images/curry.jpeg" alt="curry">
+            <img class="Show" src="Resturant images/roti.jpeg" alt="roti">
+            <img class="Show" src="Resturant images/spoon.jpeg" alt="spoon">
+    
+        </div>
+    
+        <script>
+            var myIndex = 0;
+    carousel();   //This is a component in which it is used to make slideshows on webpages in slideshows. 
+    
+    function carousel() {   //Function performs tasks and calcuates a value.
+      var i;
+      var x = document.getElementsByClassName("Show");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+        </script>
+
+
+</body>
+
+</html>

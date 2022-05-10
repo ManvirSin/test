@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!--This is HTML -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>IndiSpice</title>
+<script defer src="https://fontawesome.com/releases/v5.3.1/css/all.css"></script>
+<link rel="stylesheet" href="style.css"> 
+</head>
+
+<header>INDI-SPICE Restaurant</header>      <!--This is the title of the website-->
+
+<body> <!--This is the documents body which cotains the contents of the html document -->
+<nav>   
+<ul>
+<li><a href="The Website.html">Home</a></li>      <!--href is used to link the pages together in a single page where i can access each of them from. -->
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Menu.html">Menu</a></li>
+<li><a href="Register Login.html">Register/Login</a></li> <!--This means to list items <li> which is what im doing to the toolbar headings-->
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="Reservations.html">Reservations</a></li> <!--The a is an anchor-->
+</nav>    <!--The purpose of this is to provide links which will help the user navigate around the webpage.-->
+</ul>  <!--This is a  -unordered list-->
+
+<div>
+<img class="ind-flag" src="Resturant images/Indian flag.jpeg" alt="Indian flag"> <!--This is a link in a folder which illustrates images or pictures. -->
+</div>    
+
+<div>
+    <img class="indis-flag" src="Resturant images/Indian flag.jpeg" alt="Indian flag"> 
+</div>
+
+<body>
+
+    <div> 
+        <img class="Slides" src="Resturant images/Red Spices.jpeg" alt="Red Spices"> <!--The alt provideds more infomation about the images in general.  -->
+        <img class="Slides" src="Resturant images/dal.jpeg" alt="dal">
+        <img class="Slides" src="Resturant images/tables.jpeg" alt="tables">
+        <img class="Slides" src="Resturant images/restaurant.jpg" alt="Resturant">
+        <img class="Slides" src="Resturant images/Drinks.jpeg" alt="Drinks">
+        <img class="Slides" src="Resturant images/Bar.jpeg" alt="Bar">
+
+    </div>
+
+    <script> //This is used to embed javascript into the code and extract a code or block of data
+        var myIndex = 0;  // This is javascript
+carousel();     
+
+function carousel() {       
+  var i;
+  var x = document.getElementsByClassName("Slides");  
+  for (i = 0; i < x.length; i++) {    
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds 
+}
+    </script>
+
+<footer class=foot>  <!--Footer is the bottom section of a document.-->
+  The finest Indian cusine found anywhere in the World.
+</footer1> 
+
+<body class="bday">
+  
+<div class="Search-box">
+<input class="search-txt" type="text" name="" placeholder="Type to search">
+<a class="search=btn" href="#">
+  <i class="fas fa-search"></i>
+  
+</a>
+</div>
+
+</body>
+</html>  <!--End of the first page. -->
